@@ -128,8 +128,8 @@ if (PROACTIVE_INTERVAL > 0) {
   } else {
     const topics: Array<{ subject: string; weight: number }> = isBuyer ? [
       { subject: 'Purchase Order ${po} — ${product}', weight: 20 },
-      { subject: 'URGENT: Missing Shipment — PO ${po}', weight: 10 },
-      { subject: 'Re: PO ${po} — Delivery Delay, Need Revised ETA', weight: 10 },
+      { subject: 'URGENT: Missing Shipment — PO ${po}', weight: 15 },
+      { subject: 'Re: PO ${po} — Delivery Delay, Need Revised ETA', weight: 15 },
     ] : [
       { subject: '🔥 ONE-TIME OFFER — 50% Off Industrial Parts!!!', weight: 10 },
       { subject: 'Reminder: Annual HR Compliance Training Due', weight: 10 },
